@@ -62,7 +62,7 @@ namespace StudentAdminPortalAngular.Controllers
 
         }
 
-        [HttpGet("Get Student By Id")]
+        [HttpGet("GetStudentById")]
         public async Task<IActionResult> GetStudent( Guid studentID) 
         {
             var student = await _studentRepository.GetStudentDetailsById(studentID);
